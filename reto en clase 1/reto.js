@@ -6,28 +6,27 @@ let opciones;
 
 function mensajeParaTransporte(usoDiario, consumoDeCarne) {
     if (pregunta === "diario" && pregunta2 === "si") {
-        alert(`Su huella de Co2 es de:  ${usoDiario + consumoDeCarne} kilos pos año \n ¡Haz tu parte por el planeta! 🌍🚍Cada vez que eliges el transporte público en lugar de conducir tu propio vehículo, contribuyes directamente a reducir las emisiones de CO2 que están dañando nuestro medio ambiente. 🌱Evita el consumo de carnes rojas para mitigar asi msimo el impacto ambiental`);
+        alert(`Su huella de Co2 es de:  ${usoDiario + consumoDeCarne} kilos pos año \n ¡EXCELENTE! 🌍🚍Cada vez que eliges el transporte público en lugar de conducir tu propio vehículo, contribuyes directamente a reducir las emisiones de CO2 que están dañando nuestro medio ambiente. 🌱Evita el consumo de carnes rojas para mitigar asi msimo el impacto ambiental`);
         opciones = parseFloat(prompt("Elige una opcion \n 1 - Introduccion al cambio climatico \n 2- Huella de carbono personal  \n 3- Consejos practicos para reducir tu impacto"));
     }
-
     if (pregunta === "diario" && pregunta2 != "si") {
-        alert(`🌱 Es perfecto que no consumas carnes rojas, asi contribuyes al medio ambiente`);
+        alert(`Su huella de Co2 es de:  ${usoDiario + consumoDeCarne} kilos pos año \n ¡EXCELENTE! 🌍🚍Cada vez que eliges el transporte público en lugar de conducir tu propio vehículo, contribuyes directamente a reducir las emisiones de CO2 que están dañando nuestro medio ambiente. 🌱 Es perfecto que no consumas carnes rojas, asi contribuyes al medio ambiente`);
         opciones = parseFloat(prompt("Elige una opcion \n 1 - Introduccion al cambio climatico \n 2- Huella de carbono personal  \n 3- Consejos practicos para reducir tu impacto"));
     }
     if (pregunta === "semanal" && pregunta2 === "si") {
-        alert(`tu huella de carbono es de ${usoDiario + consumoDeCarne}  Esta bien usar el transporte publico una vez por semana, pero podriamos hacerlo mas seguido, Evita el consumo de carnes rojas para mitigar asi msimo el impacto ambiental `);
+        alert(`tu huella de carbono es de ${usoDiario + consumoDeCarne}  Esta bien usar el transporte publico una vez por semana, pero podriamos hacerlo mas seguido, 🌱 Evita el consumo de carnes rojas para mitigar asi msimo el impacto ambiental `);
         opciones = parseFloat(prompt("Elige una opcion \n 1 - Introduccion al cambio climatico \n 2- Huella de carbono personal  \n 3- Consejos practicos para reducir tu impacto"));
     }
     if (pregunta === "semanal" && pregunta2 != "si") {
-        alert(`tu huella de carbono es de ${usoDiario + consumoDeCarne}  Esta bien usar el transporte publico una vez por semana, pero podriamos hacerlo mas seguido, Es perfecto que no consumas carnes rojas, asi contribuyes al medio ambiente `);
+        alert(`tu huella de carbono es de ${usoDiario + consumoDeCarne}  Esta bien usar el transporte publico una vez por semana, pero podriamos hacerlo mas seguido,🌱 Es perfecto que no consumas carnes rojas, asi contribuyes al medio ambiente `);
         opciones = parseFloat(prompt("Elige una opcion \n 1 - Introduccion al cambio climatico \n 2- Huella de carbono personal  \n 3- Consejos practicos para reducir tu impacto"));
     }
     if (pregunta === "nunca" && pregunta2 === "si") {
-        alert(`Su huella de Co2 es de:  ${usoDiario + consumoDeCarne} kilos pos año \n ¡Haz tu parte por el planeta! 🌍🚍Cada vez que eliges el transporte público en lugar de conducir tu propio vehículo, contribuyes directamente a reducir las emisiones de CO2 que están dañando nuestro medio ambiente, Evita el consumo de carnes rojas para mitigar asi msimo el impacto ambiental`);
+        alert(`Su huella de Co2 es de:  ${usoDiario + consumoDeCarne} kilos pos año \n ¡Haz tu parte por el planeta! 🌍🚍Cada vez que eliges el transporte público en lugar de conducir tu propio vehículo, contribuyes directamente a reducir las emisiones de CO2 que están dañando nuestro medio ambiente, 🌱Evita el consumo de carnes rojas para mitigar asi msimo el impacto ambiental`);
         opciones = parseFloat(prompt("Elige una opcion \n 1 - Introduccion al cambio climatico \n 2- Huella de carbono personal  \n 3- Consejos practicos para reducir tu impacto"));
     }
     if (pregunta === "nunca" && pregunta2 != "si") {
-        alert(`Su huella de Co2 es de:  ${usoDiario + consumoDeCarne} kilos pos año \n ¡Haz tu parte por el planeta! 🌍🚍Cada vez que eliges el transporte público en lugar de conducir tu propio vehículo, contribuyes directamente a reducir las emisiones de CO2 que están dañando nuestro medio ambiente, Es perfecto que no consumas carnes rojas, asi contribuyes al medio ambiente  `);
+        alert(`Su huella de Co2 es de:  ${usoDiario + consumoDeCarne} kilos pos año \n ¡Haz tu parte por el planeta! 🌍🚍Cada vez que eliges el transporte público en lugar de conducir tu propio vehículo, contribuyes directamente a reducir las emisiones de CO2 que están dañando nuestro medio ambiente, 🌱Es perfecto que no consumas carnes rojas, asi contribuyes al medio ambiente  `);
         opciones = parseFloat(prompt("Elige una opcion \n 1 - Introduccion al cambio climatico \n 2- Huella de carbono personal  \n 3- Consejos practicos para reducir tu impacto"));
     }
 }
@@ -59,7 +58,7 @@ function calcularHuellaCarne(pregunta2) {
 
 
 }
-alert("Hola, somos LagunaViva queremos impactar positivamente al medioambiente, concientizandote de la huella de carbono generada diariamente en habitos cotidianos y como se pueden reducir");
+alert("Hola, somos LagunaViva🏞️ queremos impactar positivamente al medioambiente, concientizandote de la huella de carbono generada diariamente en habitos cotidianos y como se pueden reducir");
 
 alert("Acontinuacion encontrarar un menu de opciones, elige una para que continues la interaccion en el aplicativo");
 
