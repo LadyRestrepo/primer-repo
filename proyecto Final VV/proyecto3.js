@@ -1,8 +1,8 @@
 class Usuario {
     constructor(usuario, contraseña) {
-        this.usuario = usuario;       // Nombre del usuario, aqui se guardarian en el 
+        this.usuario = usuario;       // Nombre del usuario, estos se guardarian en el 
     //local storage
-        this.contraseña = contraseña; // Contraseña del usuario, aqui se guardarian 
+        this.contraseña = contraseña; // Contraseña del usuario, esta tambien se guardaria
         //en el local storage
     }
 }
@@ -11,7 +11,7 @@ class SistemaAhorro {
     constructor() {
         this.usuarios = this.cargarUsuarios(); // Cargar usuarios guardados
         this.usuarioActual = null;             // Usuario actualmente logueado, 
-        //inicialmente valor null, no hay aun un usuario logyueado
+        //inicialmente valor null, no hay aun un usuario logueado
     }
 
     // Registro de  un nuevo usuario que se desglosa de la primera clase Usuario linea 1 
@@ -49,7 +49,7 @@ class SistemaAhorro {
         return usuarios ? JSON.parse(usuarios) : []; // Si hay usuarios guardados, cargarlos; si no, retornar un arreglo vacío
     }
 
-    // Calcular la distribución de los ingresos
+    // se Calcula la distribución de los ingresos
     calcularDistribucion(ingresos) {
         let distribucion = {
             gastosFijos: ingresos * 0.50,
@@ -70,14 +70,14 @@ class SistemaAhorro {
     }
 }
 
-// Ejemplo de uso del sistema
+// Ejemplo de uso del programa inciial 
 let sistema = new SistemaAhorro();
 
-// Solicitar datos del usuario mediante prompts
+// Se solicitan los datos 
 let usuario = prompt('Ingresa tu usuario:');
 let contraseña = prompt('Ingresa tu contraseña:');
 
-// Registrar y hacer login de un usuario
+// se reggistra y se hace el login, si no funciona sale login fallido 
 sistema.registrar(usuario, contraseña);
 if (sistema.login(usuario, contraseña)) {
     console.log('Login exitoso');
