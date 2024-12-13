@@ -37,3 +37,4 @@ function llamarGemini(prompt) {
       if (respuesta) {
       }
     });
+    
