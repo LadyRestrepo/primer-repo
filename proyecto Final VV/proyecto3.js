@@ -21,7 +21,7 @@ class SistemaAhorro {
         this.guardarUsuarios(); // Guardar usuarios en almacenamiento local
     }
 
-    // Iniciar sesión con un usuario y contraseña
+    // Iniciar sesión con un usuario y contraseña ingresado por el prompt 
     login(usuario, contraseña) {
         for (let i = 0; i < this.usuarios.length; i++) {
             let user = this.usuarios[i];
@@ -30,7 +30,11 @@ class SistemaAhorro {
                 return true; // Login exitoso
             }
         }
-        return false; // Login fallido
+        return false; // no se genera el ingreso 
+    }
+    // Guardar usuarios en almacenamiento local
+    guardarUsuarios() {
+        localStorage.setItem('usuarios', JSON.stringify(this.usuarios));
     }
 
     // Cerrar sesión
@@ -38,10 +42,6 @@ class SistemaAhorro {
         this.usuarioActual = null; // Ningún usuario logueado
     }
 
-    // Guardar usuarios en almacenamiento local
-    guardarUsuarios() {
-        localStorage.setItem('usuarios', JSON.stringify(this.usuarios));
-    }
 
     // Cargar usuarios desde el almacenamiento local
     cargarUsuarios() {
@@ -77,7 +77,7 @@ let sistema = new SistemaAhorro();
 let usuario = prompt('Ingresa tu usuario:');
 let contraseña = prompt('Ingresa tu contraseña:');
 
-// se reggistra y se hace el login, si no funciona sale login fallido 
+// se registra y se hace el login, si no funciona sale login fallido 
 sistema.registrar(usuario, contraseña);
 if (sistema.login(usuario, contraseña)) {
     console.log('Login exitoso');
