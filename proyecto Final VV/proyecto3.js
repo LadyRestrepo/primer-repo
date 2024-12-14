@@ -1,7 +1,7 @@
 class Usuario {
     constructor(usuario, contraseña) {
         this.usuario = usuario;       // Nombre del usuario, estos se guardarian en el 
-    //local storage
+        //local storage
         this.contraseña = contraseña; // Contraseña del usuario, esta tambien se guardaria
         //en el local storage
     }
@@ -86,3 +86,7 @@ if (sistema.login(usuario, contraseña)) {
 } else {
     console.log('Login fallido');
 }
+
+
+
+

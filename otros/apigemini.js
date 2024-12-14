@@ -1,5 +1,5 @@
 function llamarGemini(prompt) {
-    const API_KEY = 'AIzaSyDgPxeInRfHrYlXdPROHeV3aLpYhQiJw1I';
+    const API_KEY = '*****************';
     const URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
   
     return fetch(URL, {
