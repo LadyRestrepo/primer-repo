@@ -50,23 +50,23 @@ class SistemaAhorro {
     }
 
     // se Calcula la distribución de los ingresos
-    calcularDistribucion(ingresos) {
-        let distribucion = {
-            gastosFijos: ingresos * 0.50,
-            ahorros: ingresos * 0.30,
-            emergencias: ingresos * 0.10,
-            gustos: ingresos * 0.10
+    calculateDistribution(income) {
+        let distribution = {
+            fixedExpenses: income * 0.50,
+            savings: income * 0.30,
+            emergency: income * 0.10,
+            enjoy: income * 0.10
         };
-        return distribucion;
+        return distribution;
     }
 
     // Mostrar la distribución de los ingresos
-    mostrarDistribucion(ingresos) {
-        let distribucion = this.calcularDistribucion(ingresos);
-        console.log(`Gastos Fijos: ${distribucion.gastosFijos}`);
-        console.log(`Ahorros: ${distribucion.ahorros}`);
-        console.log(`Emergencias: ${distribucion.emergencias}`);
-        console.log(`Gastos para Gustos: ${distribucion.gustos}`);
+    showDistribution(income) {
+        let distribution = this.calculateDistribution(income);
+        console.log(`Gastos Fijos: ${distribution.fixedExpenses}`);
+        console.log(`Ahorros: ${distribution.savings}`);
+        console.log(`Emergencias: ${distribution.emergency}`);
+        console.log(`Gastos para Gustos: ${distribution.enjoy}`);
     }
 }
 
